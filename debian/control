@@ -8,13 +8,12 @@ Uploaders:
 Build-Depends:
  debhelper-compat (= 13)
  , dh-sequence-nodejs
- , node-chownr
- , node-mkdirp-classic <!nocheck>
  , node-pump
  , node-rimraf (>= 2.6.3)
+ , node-tap <!nocheck>
  , node-tape <!nocheck>
  , node-tar-stream (>= 2.1.4)
-Standards-Version: 4.6.0
+Standards-Version: 4.7.2
 Homepage: https://github.com/mafintosh/tar-fs
 Vcs-Git: https://salsa.debian.org/js-team/node-tar-fs.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-tar-fs
@@ -25,8 +24,6 @@ Package: node-tar-fs
 Architecture: all
 Depends:
  ${misc:Depends}
- , node-chownr
- , node-mkdirp-classic
  , node-pump
  , node-tar-stream (>= 2.1.4)
 Description: Node.js module that provides filesystem-like access to tar files

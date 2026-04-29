@@ -1,5 +1,10 @@
 version=4
 opts=\
 dversionmangle=auto,\
-filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-tar-fs-$1/ \
- https://github.com/mafintosh/tar-fs/tags .*/archive/.*/v?([\d\.]+).tar.gz
+filenamemangle=s/.*?(@ANY_VERSION@@ARCHIVE_EXT@)/node-tar-fs-$1/ \
+ https://github.com/mafintosh/tar-fs/tags .*/archive/.*/v?@ANY_VERSION@@ARCHIVE_EXT@ group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-tar-fs,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(@ANY_VERSION@@ARCHIVE_EXT@)/node-types-tar-fs-$1/" \
+ https://registry.npmjs.org/@types/tar-fs https://registry.npmjs.org/@types/tar-fs/-/tar-fs-@ANY_VERSION@@ARCHIVE_EXT@ checksum
