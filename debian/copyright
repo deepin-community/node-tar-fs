@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: tar-fs
 Upstream-Contact: https://github.com/mafintosh/tar-fs/issues
 Source: https://github.com/mafintosh/tar-fs
+ https://registry.npmjs.org/@types/tar-fs
 
 Files: *
 Copyright: 2014-2020, Mathias Buus <mathiasbuus@gmail.com>
