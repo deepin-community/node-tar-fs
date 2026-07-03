@@ -1,3 +1,18 @@
+node-tar-fs (2.1.3-0+deb12u2) bookworm-security; urgency=medium
+
+  * Apply fix for CVE-2025-59343 (Closes: #1116338)
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 25 Sep 2025 23:12:11 +0200
+
+node-tar-fs (2.1.3-0+deb12u1) bookworm; urgency=medium
+
+  * Non-maintainer upload.
+  * New upstream release.
+    - CVE-2024-12905: symlink path traversal (Closes: #1101501)
+    - CVE-2025-48387: hardlink path traversal
+
+ -- Adrian Bunk <bunk@debian.org>  Mon, 09 Jun 2025 22:02:36 +0300
+
 node-tar-fs (2.1.1-6) unstable; urgency=medium
 
   * Team upload
